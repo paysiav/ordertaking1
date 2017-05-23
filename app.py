@@ -34,7 +34,7 @@ def makeWebhookResult(req):
     parameters = result.get("parameters")
     combos = parameters.get("combos")
     number = parameters.get("number")
-    cost = {'Combo-1':3.86, 'Combo-2':5.98, 'Combo-3':6.35}
+    cost = {'Combo1':3.86, 'Combo2':5.98, 'Combo3':6.35}
     totalcost = number * (cost[combos])
 
     speech = "Your order is : ", number + combos, "and your total cost is: ", totalcost
